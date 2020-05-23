@@ -174,24 +174,18 @@ $n_query=mysqli_query($db,$show_approve_request_query );
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Active Cases<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-                  <li><a href="Doctor/doctor_login.php"></a>Doctor</li>
-                  <li><a href="Users/login.php">User</a></li>
-            	<li><a href="Admin/adminlogin.php">Admin</a></li>
-                  </ul>
-          </li>
+          
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#location">Hospital Location  <span class="caret"></span></a>
           <ul class="dropdown-menu"> 
-       <li> <a href="location map/dhaka.html">Thiruparankundram</a></li>
-      <li>  <a href='location map/chittagong.html'>Thirumangalam</a></li>
+       <li> <a href="location map/dhaka.html">Madurai North</a></li>
+      <li>  <a href='location map/chittagong.html'>Alwarpuram</a></li>
        <li> <a href="location map/barishal.html">Periyar</a></li>
       <li>  <a href="location map/khulna.html">Mathutavanai</a></li>
-     <li>   <a href='location map/mymensingh.html'>Melur</a></li>
-     <li>   <a href='location map/rajshahi.html'>Simmakal</a></li>
+     <li>   <a href='location map/mymensingh.html'>Ring Road- Chinthamani</a></li>
+  
      <li>   <a href='location map/rangpur.html'>Anna Nagar</a></li>
-     <li>   <a href='location map/sylhet.html'>Park Town</a></li>
+     <li>   <a href='location map/sylhet.html'>Uthangudi</a></li>
         </ul>
         </li>
         
@@ -201,31 +195,24 @@ $n_query=mysqli_query($db,$show_approve_request_query );
           <span class="caret"></span></a>
           <ul class="dropdown-menu">     
      <li> <a href='medicine.php'>COVID-19 ACTIVE CASES</a></li>
-    <li>  <a href='Discharged.php'>Discharged</a></li>
-      <li> <a href='Home Quarantine.php'>Home Quarantine</a></li>
-      <li> <a href="Areas.php">No. of quarantined Areas </a></li>
-      <li> <a href='Suspected.php'>Suspected</a></li>
-      <li> <a href='Other.php'>Other Districts</a></li>
+    <li>  <a href='Discharged.php'>Total Cases -224</a></li>
+      <li> <a href='Home Quarantine.php'>Active Cases- 111</a></li>
+      
+      <li> <a href='Other.php'>Other Districts-29</a></li>
      
      </ul>
         </li>
-        <li><a href="disease_prediction.php">Suggest Doctor</a></li>
+        
         <li> <a href="blog/blog_front_page.php" >Blog</a></li>
+		<li> <a href="notification1.php" >Notification_Update</a></li>
           
      
    <li> <a href="#contact" onclick="toggleFunction()">Contact Us</a></li>
       
-            	<li><a href="Admin/notification.php">Notification<?php if($count>0)
-{
+            	
 
-} 
-echo '('.$count.')'?></a></li>
-                
-     <li>
-       <form action = "search.php" method = "POST">
 
- <input type = "text" name="f_name" placeholder="Search By Doctor Name..." />
-                   <input  type="submit"name="search"  value="GO" />
+    
                        <?php
 if(isset($error_msg)){echo $error_msg;}
 ?>
@@ -246,12 +233,12 @@ if(isset($error_msg)){echo $error_msg;}
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="pic/45.png" alt="img1" width="1200" height="700">
+        <img src="pic/covid-19.png" alt="img1" width="1200" height="700">
 
       </div>
 
       <div class="item">
-        <img src="pic/covid-19.png" alt="img2" width="1200" height="700">
+        <img src="pic/health.png" alt="img2" width="1200" height="700">
              
       </div>
     
@@ -279,7 +266,7 @@ if(isset($error_msg)){echo $error_msg;}
 	style="color:#0066FF"><a href="Users/registration.php">Register</a></strong> here 
 	please . You can still get locations about new cases getting reported in 10 mins from here.
  </p>
-  <p class="text-center"><em>Total Cases Reported as of 17.05.2020 is 160</em></p>
+  <p class="text-center"><em>To view the Cases click on Notification_update above</em></p>
     </div>
   </div>
 
